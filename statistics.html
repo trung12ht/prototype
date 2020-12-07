@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/wijmo.min.css">
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/keyboard.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="chart/linechartdemo.js"></script>
+    <script src="chart/radarchart.js"></script>
+    <script src="chart/multiserieschartdemo.js"></script>
+    <script src="chart/demochart.js"></script>
+
+    <title>Document</title>
+</head>
+<script>
+    $(function() {
+        // $('#lineChart').Lazy();
+        // $('.chartdemo').Lazy();
+        // $('#radarChart').Lazy();
+        // $('#multiSeriesChart').Lazy();
+    });
+</script>
+<body>
+    <div class="trapezoid1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="nav-triangle">
+                    <div class="icon-line1">ỨNG DỤNG</div>
+                    <div class="icon-line2">TỐC KÝ</div>
+                    <div class="triangle-down"></div>
+                    <div class="trapezoid">
+                        <div class="button-group">
+                            <a href="index.html">
+                                <button type="button" class="btn btn-primary button-nav" style="width: 120px;">Học</button>
+                            </a>
+                            <a href="luyentap.html">
+                                <button type="button" class="btn btn-primary button-nav">Luyện tập</button>
+                            </a>
+                            <button type="button" class="btn btn-secondary button-nav-active" style="width: 160px;">Thống kê</button>
+                            <a href="kiemtra.html">
+                                <button type="button" class="btn btn-primary button-nav">Kiểm tra</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chartdemo">
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div id="lineChart" style="height: 300px; width: 100%; background-color: black; margin: 40px 40px;"></div>
+            <canvas id="radarChart" width="undefined" height="220px" style="background-color: white; margin: 40px 40px;"></canvas>
+            <div id="multiSeriesChart" style="height: 300px; width: 100%; margin: 40px 40px;"></div>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+</body>
+
+</html>

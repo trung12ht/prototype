@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/wijmo.min.css">
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/keyboard.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/arrayDataObject.js"></script>
+    <script src="js/arrayTrainningDataObject.js"></script>
+    <script src="js/jquery.keyboard.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.keyboard.extension-typing.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery.keyboard.extension-caret.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/stenoKeyboards.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="trapezoid1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="nav-triangle">
+                    <div class="icon-line1">ỨNG DỤNG</div>
+                    <div class="icon-line2">TỐC KÝ</div>
+                    <div class="triangle-down"></div>
+                    <div class="trapezoid">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-secondary button-nav-active">Học</button>
+                            <a href="luyentap.html">
+                                <button type="button" class="btn btn-primary button-nav">Luyện tập</button>
+                            </a>
+                            <a href="statistics.html">
+                                <button type="button" class="btn btn-primary button-nav">Thống kê</button>
+                            </a>
+                            <a href="kiemtra.html">
+                                <button type="button" class="btn btn-primary button-nav">Kiểm tra</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="show-header"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="main-content" class="style-1" style="padding: 32px;">
+                    <div id="wrap">
+                        <input class="keyboard" type="text" />
+                        <div id="stenoKeyboard" class="ui-draggable ui-resizable ui-draggable-handle"
+                            style="left: 665px; top: 169px;">
+                            <div class="stenoNumberBar">
+                                <div class="stenoKey numberBar code48 code49 code50 code51 code52 code53 code54 code55 code56 code57"
+                                    id="stenoKeyNumberBar" style="background-color: rgb(0, 0, 0);"></div>
+                            </div>
+                            <div class="stenoUpperBank">
+                                <div class="stenoKey square code81 code65" id="stenoKeyS-1"
+                                    style="background-color: rgb(0, 0, 0);">S</div>
+                                <div class="stenoKey square code87" id="stenoKeyT-"
+                                    style="background-color: rgb(0, 0, 0);">
+                                    K<span style="white-space:pre"> </span></div>
+                                <div class="stenoKey square code69" id="stenoKeyP-"
+                                    style="background-color: rgb(0, 0, 0);">R</div>
+                                <div class="stenoKey square code82" id="stenoKeyH-"
+                                    style="background-color: rgb(0, 0, 0);">N</div>
+                                <div class="stenoKey square code71 code72 code84 code89" id="stenoKeyAsterisk1"
+                                    style="background-color: rgb(0, 0, 0);">H</div>
+                                <div class="stenoKey square code85" id="stenoKey-F"
+                                    style="background-color: rgb(0, 0, 0);">*</div>
+                                <div class="stenoKey square code73" id="stenoKey-P"
+                                    style="background-color: rgb(0, 0, 0);">W</div>
+                                <div class="stenoKey square code79" id="stenoKey-L"
+                                    style="background-color: rgb(0, 0, 0);">J</div>
+                                <div class="stenoKey square code80" id="stenoKey-T"
+                                    style="background-color: rgb(0, 0, 0);">N</div>
+                                <div class="stenoKey square code219" id="stenoKey-D"
+                                    style="background-color: rgb(0, 0, 0);">T</div>
+                            </div>
+                            <div class="stenoLowerBank">
+                                <div class="stenoKey rounded code81 code65" id="stenoKeyS-2"
+                                    style="background-color: rgb(0, 0, 0);">T</div>
+                                <div class="stenoKey rounded code83" id="stenoKeyK-"
+                                    style="background-color: rgb(0, 0, 0);">P</div>
+                                <div class="stenoKey rounded code68" id="stenoKeyW-"
+                                    style="background-color: rgb(0, 0, 0);">H</div>
+                                <div class="stenoKey rounded code70" id="stenoKeyR-"
+                                    style="background-color: rgb(0, 0, 0);">N</div>
+                                <div class="stenoKey rounded code71 code72 code84 code89" id="stenoKeyAsterisk2"
+                                    style="background-color: rgb(0, 0, 0);">S</div>
+                                <div class="stenoKey rounded code74" id="stenoKey-R"
+                                    style="background-color: rgb(0, 0, 0);">I</div>
+                                <div class="stenoKey rounded code75" id="stenoKey-B"
+                                    style="background-color: rgb(0, 0, 0);">Y</div>
+                                <div class="stenoKey rounded code76" id="stenoKey-G"
+                                    style="background-color: rgb(0, 0, 0);">J</div>
+                                <div class="stenoKey rounded code59 code186" id="stenoKey-S"
+                                    style="background-color: rgb(0, 0, 0);">G</div>
+                                <div class="stenoKey rounded code222" id="stenoKey-Z"
+                                    style="background-color: rgb(0, 0, 0);">K</div>
+                            </div>
+                            <div class="stenoVowelKeys">
+                                <div class="stenoKey rounded code67" id="stenoKeyA-"
+                                    style="background-color: rgb(0, 0, 0);">U</div>
+                                <div class="stenoKey rounded code86" id="stenoKeyO-"
+                                    style="background-color: rgb(0, 0, 0);">O</div>
+                                <div class="stenoKey rounded code78" id="stenoKey-E"
+                                    style="background-color: rgb(0, 0, 0);">E</div>
+                                <div class="stenoKey rounded code77" id="stenoKey-U"
+                                    style="background-color: rgb(0, 0, 0);">A</div>
+                            </div>
+                            <div class="ui-resizable-handle ui-resizable-e"></div>
+                            <div class="ui-resizable-handle ui-resizable-s"></div>
+                            <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
+                                style="z-index: 1001;"></div>
+                            <div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div>
+                            <div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div>
+                            <div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se"
+                                style="z-index: 90;"></div>
+                        </div>
+
+                        <script type="text/javascript" src="js/gophim.js"></script>
+                        <script type="text/javascript" src="js/uiElements.js"></script>
+                        <script type="text/javascript" src="js/ploverdemo.js"></script>
+
+                        <div id="verticalNotesContainer" class="ui-draggable ui-resizable" style="display: none;">
+                            <h1>Vertical Notes</h1>
+                            <textarea id="verticalNotes" wrap="off" rows="10" cols="36"></textarea>
+                            <div class="ui-resizable-handle ui-resizable-s"></div>
+                        </div>
+
+                        <textarea id="output" rows="10" cols="66" style="display: none;"></textarea>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
