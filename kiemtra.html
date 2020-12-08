@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" type='text/css'>
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/keyboard.css">
+    <link rel="stylesheet" href="css/kiemtra.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/wijmo.min.js"></script>
@@ -37,7 +38,8 @@
                     <div class="trapezoid">
                         <div class="button-group">
                             <a href="index.html">
-                                <button type="button" class="btn btn-primary button-nav" style="width: 120px;">Học</button>
+                                <button type="button" class="btn btn-primary button-nav"
+                                    style="width: 120px;">Học</button>
                             </a>
                             <a href="luyentap.html">
                                 <button type="button" class="btn btn-primary button-nav">Luyện tập</button>
@@ -45,7 +47,8 @@
                             <a href="thongke.html">
                                 <button type="button" class="btn btn-primary button-nav">Thống kê</button>
                             </a>
-                            <button type="button" class="btn btn-secondary button-nav-active" style="width: 160px;">Kiểm tra</button>
+                            <button type="button" class="btn btn-secondary button-nav-active" style="width: 160px;">Kiểm
+                                tra</button>
                         </div>
                     </div>
                 </div>
@@ -54,44 +57,512 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-sm-12" style="
-    position: fixed;
-    bottom: 30px;
-    left: 1100px;
-    z-index: 100;
-">
-                        <button type="button" class="btn btn-primary back">
-                            <span class="fas fa-long-arrow-alt-right" style="font-size: 60px;
-                        transform: translate(-39.5%, -28.5%) scaleX(1.2) scaleX(1.2);"></span>
-                        </button>
-                        <div class="label-back">Bài tiếp theo</div>
-                    </div>
-                    <div class="col-sm-12">
-                        <button type="button" class="btn btn-primary back">
-                            <span class="fas fa-long-arrow-alt-left" style="font-size: 60px;
-                        transform: translate(-39.5%, -28.5%) scaleX(1.2) scaleX(1.2);"></span>
-                        </button>
-                        <div class="label-back">Bài học trước</div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-5">
-                            <div id="theTree" class="style-1"></div>
-                        </div>
-                        <div class="col-xs-7">
+            <div class="col-sm-12">
+                <div class="row" >
+                    <table class="content-table">
+                        <caption style="text-align: left;caption-side: top;background-color:cadetblue;color: black;font-size: 24;">Cuộc thi sắp diễn ra</caption>
+                        <thead>
+                          <tr>
+                            <th>Tên cuộc thi</th>
+                            <th>Yêu cầu tốc độ</th>
+                            <th>Yêu cầu độ chính xác</th>
+                            <th>Diễn ra trong</th>
+                            <th>Thời gian thực hiện</th>
+                            <th>Số lần nộp tối đa</th>
+                            <th>Hạn cuối nộp bài</th>
+                            <th>Tab bài học</th>
+                            <th>Tham gia</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr >
+                            <td>Kiểm tra nguyên âm đầu</td>
+                            <td>60 từ/s</td>
+                            <td>80%</td>
+                            <td>
+                                <div>
+                                    <div>
+                                        08/12/2020
+                                    </div>
+                                    <div>
+                                        16h05
+                                    </div>
+                                </div>
+                            </td>
+                            <td>15 phút</td>
+                            <td>3</td>
+                            <td>
+                                <div>
+                                    <div>
+                                        09/12/2020
+                                    </div>
+                                    <div>
+                                        18h05
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                               Thực hành gõ âm đầu(gh, g, ngh, ng)
+                            </td>
+                            <td><a href="kiemtratocdo.html">Tham gia</a></td>
+                          </tr>
+                          
+                          
+                        </tbody>
+                        <tbody>
+                            <tr>
+                              <td>Kiểm tra nguyên âm đầu</td>
+                              <td>60 từ/s</td>
+                              <td>80%</td>
+                              <td>
+                                  <div>
+                                      <div>
+                                          08/12/2020
+                                      </div>
+                                      <div>
+                                          16h05
+                                      </div>
+                                  </div>
+                              </td>
+                              <td>15 phút</td>
+                              <td>3</td>
+                              <td>
+                                  <div>
+                                      <div>
+                                          09/12/2020
+                                      </div>
+                                      <div>
+                                          18h05
+                                      </div>
+                                  </div>
+                              </td>
+                              <td>
+                                 Thực hành gõ âm đầu(gh, g, ngh, ng)
+                              </td>
+                              <td><a href="kiemtratocdo.html">Tham gia</a></td>
+                            </tr>
+                            
+                            
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <td>Kiểm tra nguyên âm đầu</td>
+                              <td>60 từ/s</td>
+                              <td>80%</td>
+                              <td>
+                                  <div>
+                                      <div>
+                                          08/12/2020
+                                      </div>
+                                      <div>
+                                          16h05
+                                      </div>
+                                  </div>
+                              </td>
+                              <td>15 phút</td>
+                              <td>3</td>
+                              <td>
+                                  <div>
+                                      <div>
+                                          09/12/2020
+                                      </div>
+                                      <div>
+                                          18h05
+                                      </div>
+                                  </div>
+                              </td>
+                              <td>
+                                 Thực hành gõ âm đầu(gh, g, ngh, ng)
+                              </td>
+                              <td><a href="kiemtratocdo.html">Tham gia</a></td>
+                            </tr>
+                            
+                            
+                          </tbody>
+                      </table> 
+                      <div style="height: 50px;">
+                      </div>
+                      <div>
+                          <div>
+                              Lộ trình của bạn
+                          </div>
+                      </div>
+                      
+                        <table class="content-table">
+                            <caption style="text-align: left;caption-side: top;background-color:cadetblue;color: black;font-size: 24;">Kiểm tra định kỳ khóa học</caption>
+                            <thead>
+                              <tr>
+                                <th>Tên cuộc thi</th>
+                                <th>Yêu cầu tốc độ</th>
+                                <th>Yêu cầu độ chính xác</th>
+                                <th>Diễn ra trong</th>
+                                <th>Thời gian thực hiện</th>
+                                <th>Số lần nộp tối đa</th>
+                                <th>Hạn cuối nộp bài</th>
+                                <th>Tab bài học</th>
+                                <th>Đã hoàn thành</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Kiểm tra nguyên âm đầu</td>
+                                <td>60 từ/s</td>
+                                <td>80%</td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            08/12/2020
+                                        </div>
+                                        <div>
+                                            16h05
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>15 phút</td>
+                                <td>3</td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            09/12/2020
+                                        </div>
+                                        <div>
+                                            18h05
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                   Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                </td>
+                                <td><input type="checkbox" name="name1" />&nbsp;</td>
+                              </tr>
+                              
+                              
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                  <td>Kiểm tra nguyên âm đầu</td>
+                                  <td>60 từ/s</td>
+                                  <td>80%</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              08/12/2020
+                                          </div>
+                                          <div>
+                                              16h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>15 phút</td>
+                                  <td>3</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              09/12/2020
+                                          </div>
+                                          <div>
+                                              18h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                     Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                  </td>
+                                  <td><input type="checkbox" name="name1" />&nbsp;</td>
+                                </tr>
+                                
+                                
+                              </tbody>
+                              <tbody>
+                                <tr>
+                                  <td>Kiểm tra nguyên âm đầu</td>
+                                  <td>60 từ/s</td>
+                                  <td>80%</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              08/12/2020
+                                          </div>
+                                          <div>
+                                              16h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>15 phút</td>
+                                  <td>3</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              09/12/2020
+                                          </div>
+                                          <div>
+                                              18h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                     Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                  </td>
+                                  <td><input type="checkbox" name="name1" />&nbsp;</td>
+                                </tr>
+                                
+                                
+                              </tbody>
+                          </table>
+                           
+                      <div style="height: 30;">
 
-                        </div>
-                    </div>
+                      </div>
+                      <div>
+                        <table class="content-table">
+                            <caption style="text-align: left;caption-side: top;background-color:cadetblue;color: black;font-size: 24;">Kiểm tra giữa khóa học</caption>
+                            <thead>
+                              <tr>
+                                <th>Tên cuộc thi</th>
+                                <th>Yêu cầu tốc độ</th>
+                                <th>Yêu cầu độ chính xác</th>
+                                <th>Diễn ra trong</th>
+                                <th>Thời gian thực hiện</th>
+                                <th>Số lần nộp tối đa</th>
+                                <th>Hạn cuối nộp bài</th>
+                                <th>Tab bài học</th>
+                                <th>Đã hoàn thành</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Kiểm tra nguyên âm đầu</td>
+                                <td>60 từ/s</td>
+                                <td>80%</td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            08/12/2020
+                                        </div>
+                                        <div>
+                                            16h05
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>15 phút</td>
+                                <td>3</td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            09/12/2020
+                                        </div>
+                                        <div>
+                                            18h05
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                   Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                </td>
+                                <td><input type="checkbox" name="name1" />&nbsp;</td>
+                              </tr>
+                              
+                              
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                  <td>Kiểm tra nguyên âm đầu</td>
+                                  <td>60 từ/s</td>
+                                  <td>80%</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              08/12/2020
+                                          </div>
+                                          <div>
+                                              16h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>15 phút</td>
+                                  <td>3</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              09/12/2020
+                                          </div>
+                                          <div>
+                                              18h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                     Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                  </td>
+                                  <td><input type="checkbox" name="name1" />&nbsp;</td>
+                                </tr>
+                                
+                                
+                              </tbody>
+                              <tbody>
+                                <tr>
+                                  <td>Kiểm tra nguyên âm đầu</td>
+                                  <td>60 từ/s</td>
+                                  <td>80%</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              08/12/2020
+                                          </div>
+                                          <div>
+                                              16h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>15 phút</td>
+                                  <td>3</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              09/12/2020
+                                          </div>
+                                          <div>
+                                              18h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                     Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                  </td>
+                                  <td><input type="checkbox" name="name1" />&nbsp;</td>
+                                </tr>
+                                
+                                
+                              </tbody>
+                          </table>
+                          <table class="content-table">
+                            <caption style="text-align: left;caption-side: top;background-color:cadetblue;color: black;font-size: 24;">Kiểm tra cuối khóa học</caption>
+                            <thead>
+                              <tr>
+                                <th>Tên cuộc thi</th>
+                                <th>Yêu cầu tốc độ</th>
+                                <th>Yêu cầu độ chính xác</th>
+                                <th>Diễn ra trong</th>
+                                <th>Thời gian thực hiện</th>
+                                <th>Số lần nộp tối đa</th>
+                                <th>Hạn cuối nộp bài</th>
+                                <th>Tab bài học</th>
+                                <th>Đã hoàn thành</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Kiểm tra nguyên âm đầu</td>
+                                <td>60 từ/s</td>
+                                <td>80%</td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            08/12/2020
+                                        </div>
+                                        <div>
+                                            16h05
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>15 phút</td>
+                                <td>3</td>
+                                <td>
+                                    <div>
+                                        <div>
+                                            09/12/2020
+                                        </div>
+                                        <div>
+                                            18h05
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                   Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                </td>
+                                <td><input type="checkbox" name="name1" />&nbsp;</td>
+                              </tr>
+                              
+                              
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                  <td>Kiểm tra nguyên âm đầu</td>
+                                  <td>60 từ/s</td>
+                                  <td>80%</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              08/12/2020
+                                          </div>
+                                          <div>
+                                              16h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>15 phút</td>
+                                  <td>3</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              09/12/2020
+                                          </div>
+                                          <div>
+                                              18h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                     Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                  </td>
+                                  <td><input type="checkbox" name="name1" />&nbsp;</td>
+                                </tr>
+                                
+                                
+                              </tbody>
+                              <tbody>
+                                <tr>
+                                  <td>Kiểm tra nguyên âm đầu</td>
+                                  <td>60 từ/s</td>
+                                  <td>80%</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              08/12/2020
+                                          </div>
+                                          <div>
+                                              16h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>15 phút</td>
+                                  <td>3</td>
+                                  <td>
+                                      <div>
+                                          <div>
+                                              09/12/2020
+                                          </div>
+                                          <div>
+                                              18h05
+                                          </div>
+                                      </div>
+                                  </td>
+                                  <td>
+                                     Thực hành gõ âm đầu(gh, g, ngh, ng)
+                                  </td>
+                                  <td><input type="checkbox" name="name1" />&nbsp;</td>
+                                </tr>
+                                
+                                
+                              </tbody>
+                          </table>  
+                      </div>
+
+                      </div>
+                    </div>  
                 </div>
             </div>
-            <div class="col-sm-8">
-                <div class="main-content" class="style-1" style="padding: 32px;">
-
-                </div>
-            </div>
+          
         </div>
     </div>
 </body>
