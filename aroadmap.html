@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tudien.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/wijmo.min.css">
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/keyboard.css">
+    <link rel="stylesheet" href="css/percircle.css">
+    <link rel="stylesheet" href="css/kiemtra.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/arrayDataObject.js"></script>
+    <script src="js/arrayTrainningDataObject.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/jquery.keyboard.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script src="js/jquery.keyboard.extension-typing.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery.keyboard.extension-caret.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/percircle.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="trapezoid1"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="nav-triangle">
+                    <div class="icon-line1">ỨNG DỤNG</div>
+                    <div class="icon-line2">TỐC KÝ</div>
+                    <div class="triangle-down"></div>
+                    <div class="trapezoid">
+                        <div class="button-group">
+                            <a href="index.html">
+                                <button type="button" class="btn btn-primary button-nav"
+                                    style="width: 120px;">Học</button>
+                            </a>
+                            <a href="luyentap.html">
+                                <button type="button" class="btn btn-primary button-nav">Luyện tập</button>
+                            </a>
+                            <a href="kiemtra.html">
+                                <button type="button" class="btn btn-primary button-nav">Kiểm tra</button>
+                            </a>
+                            <a href="statistics.html" style="">
+                                <button type="button" class="btn btn-primary button-nav">Thống kê</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container">
+
+            <div class="container" style="margin-bottom: 100px;">
+                <div class="row">
+                    <div class="label-roadmap">
+                        Bạn đang tập luyện tốt, tiếp tục học tập cùng chúng tôi
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="label-roadmap">
+                        Lựa chọn bài học của bạn 
+                    </div>
+                        <div class="label-roadmap-small" style="margin-top: 4px; margin-left: 10px;">
+                            (Sắp có bài kiểm tra âm đầu, hãy làm bài luyện tập để được kết quả tốt nhất)
+                        </div>
+                    </div>
+                <div class="row">
+                    
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="pinkcircle" data-text="work" data-percent="65" class="center big percircle animate gt50">
+                                    <span style="top: calc(46% - .1em); font-size: 36px;" class="text-span">
+                                        <img src="img/roadmap-keyboard.png">
+                                    </span>
+                                    <div class="slice">
+                                        <div class="bar" style="transform: rotate(360deg); border: 0.08em solid #015000;"></div>
+                                        <div class="fill" style="border: 0.08em solid #015000;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="label-roadmap center">
+                                    Bàn phím tốc ký
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="label-roadmap center">
+                                    Đã hoàn thành
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="pinkcircle" data-text="work" data-percent="65"
+                                    class="red big percircle animate gt50 center">
+                                    <span style="top: calc(46% - .1em); font-size: 36px;" class="text-span">
+                                    <img src="img/roadmap-amdau.png" style="width: 70px; margin-top: 15px; ">
+                                    </span>
+                                    <div class="slice">
+                                        <div class="bar" style="transform: rotate(192deg);"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="pinkcircle" data-text="work" data-percent="65"
+                                    class="red big percircle animate gt50 center">
+                                    <span style="top: calc(46% - .1em); font-size: 36px;" class="text-span">
+                                        <img src="img/roadmap-amchinh.png" style="padding-top: 5px; width: 85px;">
+                                    </span>
+                                    <div class="slice">
+                                        <div class="bar" style="transform: rotate(180deg);"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    Âm đầu
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    Âm chính
+                                </div>
+                            </div>
+
+                            
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    1 / 1 bài học
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    20 / 31 bài học
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    0 / 1 bài luyện tập
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    2 / 3 bài luyện tập
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="pinkcircle" data-text="work" data-percent="65"
+                                    class="red big percircle animate gt50 center">
+                                    <span style="top: calc(46% - .1em); font-size: 36px;" class="text-span">
+                                    <img src="img/roadmap-amcuoi.png">
+                                    </span>
+                                    <div class="slice">
+                                        <div class="bar" style="transform: rotate(313.2deg);"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div id="pinkcircle" data-text="work" data-percent="65"
+                                    class="red big percircle animate gt50 center">
+                                    <span style="top: calc(46% - .1em); font-size: 36px;"  class="text-span">
+                                    <img src="img/roadmap-goso.png" style="padding-top: 10px;"/>
+                                    </span>
+                                    <div class="slice">
+                                        <div class="bar" style="transform: rotate(180deg);"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    Âm cuối
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    Gõ số
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    Bàn phím tốc ký
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    Bàn phím tốc ký
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    6 / 7 bài học
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    1 / 1 bài học
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    2 / 3 bài luyện tập
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-roadmap center">
+                                    0 / 1 bài luyện tập
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <div>
+                            <table class="content-table">
+                                <caption style="text-align: left;caption-side: top;background-color:cadetblue;color: black;font-size: 24;">
+                                    Bài kiểm tra sắp diễn ra</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Tên cuộc thi</th>
+                                        <th>Hạn cuối nộp bài</th>
+                                        <th>Tham gia</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Kiểm tra nguyên âm đầu</td>
+                                        <td>
+                                            <div>
+                                                <div>
+                                                    12/12/2020
+                                                </div>
+                                                <div>
+                                                    18h05
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><a href="kiemtratocdo.html">Tham gia</a></td>
+                                    </tr>
+        
+        
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Kiểm tra nguyên âm đầu</td>
+                                        <td>
+                                            <div>
+                                                <div>
+                                                    12/12/2020
+                                                </div>
+                                                <div>
+                                                    18h05
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><a href="kiemtratocdo.html">Tham gia</a></td>
+                                    </tr>
+        
+        
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>Kiểm tra nguyên âm đầu</td>
+                                        <td>
+                                            <div>
+                                                <div>
+                                                    09/12/2020
+                                                </div>
+                                                <div>
+                                                    18h05
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><a href="kiemtratocdo.html">Tham gia</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+</body>
+
+</html>
