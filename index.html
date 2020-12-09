@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <div class="trapezoid1"></div>
+    <!-- <div class="trapezoid1"></div> -->
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -61,22 +61,22 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="row">
-                    <div class="col-sm-12" style="
+                    <div class="col-sm-0" style="
     position: fixed;
     bottom: 30px;
-    left: 1153px;
+    right: 80px;
     z-index: 100;
 ">
                         <button type="button" class="btn btn-primary back">
-                            <span class="fas fa-long-arrow-alt-right" style="font-size: 60px;
-                        transform: translate(-39.5%, -28.5%) scaleX(1.2) scaleX(1.2);"></span>
+                            <span class="fas fa-long-arrow-alt-right" style="width: 100px !important;font-size: 60px;
+                        transform: translate(-14.5%, -28.5%) scaleX(1.2) scaleX(1.2);"></span>
                         </button>
                         <div class="label-back">Bài tiếp theo</div>
                     </div>
                     <div class="col-sm-12">
                         <button type="button" class="btn btn-primary back">
-                            <span class="fas fa-long-arrow-alt-left" style="font-size: 60px;
-                        transform: translate(-39.5%, -28.5%) scaleX(1.2) scaleX(1.2);"></span>
+                            <span class="fas fa-long-arrow-alt-left" style="width: 100px !important;font-size: 60px;
+                        transform: translate(-14.5%, -28.5%) scaleX(1.2) scaleX(1.2);"></span>
                         </button>
                         <div class="label-back">Bài học trước</div>
                     </div>
@@ -84,7 +84,7 @@
                     
                         <div class="dropdown">
                             
-                            <button onclick="myFunction()" class="dropbtn">Từ điển
+                            <button onclick="myFunction();focusOnInput()" class="dropbtn">Từ điển
                                 <span class="fas fa-search" 
                                 style="width:15px !important;font-size: 20px; transform: translate(-0%, -0%) scaleX(1) scaleX(1);
                                 position: fixed;
@@ -93,7 +93,7 @@
                                 z-index: 10;"></span></button>
                             
                             <div id="myDropdown" class="dropdown-content">
-                            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()" autofocus>
                             <table id="myTable">
                                 <trass="header">
                                     <th style="width:20%;">Âm</th>

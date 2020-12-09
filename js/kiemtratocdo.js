@@ -4,12 +4,12 @@ let TIME_LIMIT = 60;
 
 // define quotes to be used
 let quotes_array = [
-  "Push yourself, because no one else is going to do it for you",
-  "Failure is the condiment that gives success its flavor.",
-  "Wake up with determination. Go to bed with satisfaction.",
-  "It's going to be hard, but hard does not mean impossible.",
-  "Learning never exhausts the mind.",
-  "The only way to do great work is to love what you do."
+  "Hạt bụi nào hóa kiếp thân tôi, để một mai vươn hình hài lớn dậy?",
+  "Ôi, cát bụi tuyệt vời, mặt trời soi một kiếp rong chơi.",
+  "Hạt bụi nào hoá kiếp thân tôi, để một mai tôi về làm cát bụi?",
+  "Bao nhiêu năm làm kiếp con người chợt một chiều tóc trắng như vôi",
+  "Lá úa trên cao rụng đầy, cho trăm năm vào chết một ngày",
+  "Mặt trời nào soi sáng tim tôi, để tình yêu xay mòn thành đá cuội?"
 ];
 
 // selecting required elements
@@ -138,7 +138,7 @@ function finishGame() {
   input_area.disabled = true;
 
   // show finishing text
-  quote_text.textContent = "Click on restart to start a new game.";
+  quote_text.textContent = "Ấn kiểm tra để bắt đầu lại";
 
   // display restart button
   restart_btn.style.display = "block";
