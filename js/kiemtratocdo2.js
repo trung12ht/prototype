@@ -4,12 +4,12 @@ let TIME_LIMIT = 60;
 
 // define quotes to be used
 let quotes_array = [
-  "Hạt bụi nào hóa kiếp thân tôi, để một mai vươn hình hài lớn dậy?",
-  "Ôi, cát bụi tuyệt vời, mặt trời soi một kiếp rong chơi.",
-  "Hạt bụi nào hoá kiếp thân tôi, để một mai tôi về làm cát bụi?",
-  "Bao nhiêu năm làm kiếp con người chợt một chiều tóc trắng như vôi",
-  "Lá úa trên cao rụng đầy, cho trăm năm vào chết một ngày",
-  "Mặt trời nào soi sáng tim tôi, để tình yêu xay mòn thành đá cuội?"
+  "Bao nhiêu năm làm kiếp con người chợt một chiều tóc trắng như vôi.",
+  "Lá úa trên cao rụng đầy, cho trăm năm vào chết một ngày.",
+  "Mặt trời nào soi sáng tim tôi, để tình yêu xay mòn thành đá cuội?",
+  "Xin úp mặt bùi ngùi, từng ngày qua mỏi ngóng tin vui.",
+  "Cụm rừng nào lá xác xơ, cây từ vực sâu nghe lời mời đã dậy?",
+  "Ôi, cát bụi phận này, vết mực nào xoá bỏ không hay"
 ];
 
 // selecting required elements
