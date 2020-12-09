@@ -76,3 +76,6 @@
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+$('.dropdown').on('shown.bs.dropdown', function(e) {
+    $('.dropdown-menu input').focus();
+})

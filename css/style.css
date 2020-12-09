@@ -15,7 +15,7 @@ span {
 }
 
 .triangle-down {
-    width: 0;
+    width: 5%;
     height: 0;
     border-left: 0px solid transparent;
     border-right: 80px solid transparent;
@@ -27,15 +27,15 @@ span {
     border-bottom: 125px solid #39b3e0;
     border-left: 225px solid transparent;
     border-right: 0px solid transparent;
-    height: 0;
-    width: 1030px;
-    float: left;
+    width: -webkit-fill-available;
+    margin-left: 80px;
 }
 
 .nav-triangle {
     position: relative;
     height: 125px;
     background: #3896b3;
+    width: -webkit-fill-available;
 }
 
 .icon-line1 {
@@ -278,11 +278,11 @@ $(".container").css("width", "1238px"); */
 
 .container {
     margin: 0px;
-    max-width: 1348px;
+    max-width: 100%;
 }
 
 .trapezoid {
-    width: 1238px;
+    max-width: 100%;;
 }
 
 .button-group button {
