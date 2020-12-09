@@ -1,10 +1,12 @@
 var creatMultiSeriesChart = function () {
   var chart = new CanvasJS.Chart("multiSeriesChart", {
     theme: "light2",
+    height: 308,
     title: {
       text: "Dòng thời gian",
       fontFamilty: "arial",
-      // fontColor: "#56ffff"
+      fontSize: "18",
+      fontColor: "#00008B"
     },
     animationEnabled: true,
     axisX: {
@@ -20,7 +22,7 @@ var creatMultiSeriesChart = function () {
     },
     legend: {
       cursor: "pointer",
-      verticalAlign: "top",
+      verticalAlign: "center",
       horizontalAlign: "center",
       dockInsidePlotArea: true,
       itemclick: toogleDataSeries

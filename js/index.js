@@ -1,5 +1,6 @@
 onload = function() {
 
+
     // create the tree
     var theTree = new wijmo.nav.TreeView('#theTree', {
         itemsSource: getData(),
@@ -179,7 +180,7 @@ onload = function() {
                 rsHTML += `<img src="img/${obj.image}"></img>`
             }
             rsHTML += `
-        <div style='margin-left: 269px;'>
+        <div style='margin-left: 340px;'>
         <a href="gophim.html?tab=1&index=${index}">
         <button type="button" class="btn btn-primary back" style="
     height: 60px !important;

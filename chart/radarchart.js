@@ -43,7 +43,10 @@ var createRadarChart = function() {
     options: {
       title: {
         display: true,
-        text: 'Kỹ năng của bạn'
+        text: 'Kỹ năng của bạn',
+        fontSize: '18',
+        fontWeight: 'bold',
+        fontColor: '#00008B'
       },
       scale: {
         display: true,
