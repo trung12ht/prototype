@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tudien.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/wijmo.min.css">
     <link rel="stylesheet" href="css/style.css" type='text/css'>
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery.keyboard.extension-caret.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script src="js/tudien.js"></script>
 
     <title>Document</title>
 </head>
@@ -75,6 +77,1100 @@
                         transform: translate(-39.5%, -28.5%) scaleX(1.2) scaleX(1.2);"></span>
                         </button>
                         <div class="label-back">Bài học trước</div>
+                    </div>
+                    <div class="col-sm-12">
+                    
+                        <div class="dropdown">
+                            
+                            <button onclick="myFunction()" class="dropbtn">Từ điển
+                                <span class="fas fa-search" 
+                                style="width:15px !important;font-size: 20px; transform: translate(-0%, -0%) scaleX(1) scaleX(1);
+                                position: fixed;
+                                bottom: 137px;
+                                right: 162px;
+                                z-index: 10;"></span></button>
+                            
+                            <div id="myDropdown" class="dropdown-content">
+                            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                            <table id="myTable">
+                                <trass="header">
+                                    <th style="width:20%;">Âm</th>
+                                    <th style="width:40%;">Phím tốc ký</th>
+                                    <th style="width:40%;">Vị trí</th>
+                                </tr>
+                                <tr>
+                                    <td>b</td>
+                                    <td>P</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>c</td>
+                                    <td>K</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>ch</td>
+                                    <td>SK</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>d</td>
+                                    <td>SP</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>g</td>
+                                    <td>KP</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>gh</td>
+                                    <td>KP</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>gi</td>
+                                    <td>SH</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>h</td>
+                                    <td>H</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>k</td>
+                                    <td>K</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>kh</td>
+                                    <td>KH</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>l</td>
+                                    <td>SR</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>m</td>
+                                    <td>RH</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>n</td>
+                                    <td>PR</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>ng</td>
+                                    <td>KR</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>ngh</td>
+                                    <td>KR</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>nh</td>
+                                    <td>TK</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>p</td>
+                                    <td>SPH</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>ph</td>
+                                    <td>PH</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>q</td>
+                                    <td>STK</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>r</td>
+                                    <td>R</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>s</td>
+                                    <td>S</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>t</td>
+                                    <td>T</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>th</td>
+                                    <td>TH</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>tr</td>
+                                    <td>TR</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>v</td>
+                                    <td>SPR</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>x</td>
+                                    <td>ST</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>đ</td>
+                                    <td>TP</td>
+                                    <td>Âm đầu</td>
+                                </tr>
+
+
+
+
+
+
+                                <tr>
+                                    <td>a</td>
+                                    <td>-A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>e</td>
+                                    <td>-E</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+                                    <td>*-I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ia</td>
+                                    <td>-IE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>iê</td>
+                                    <td>-IE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>iế</td>
+                                    <td>-SIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>iề</td>
+                                    <td>-HIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>iể</td>
+                                    <td>-HSIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>iễ</td>
+                                    <td>N-SIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>iệ</td>
+                                    <td>N-IE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>o</td>
+                                    <td>-O</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oa</td>
+                                    <td>-U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oe</td>
+                                    <td>-AY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oo</td>
+                                    <td>*-O</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oà</td>
+                                    <td>-HU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oá</td>
+                                    <td>-SU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oã</td>
+                                    <td>N-SU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oè</td>
+                                    <td>-HAY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oé</td>
+                                    <td>-SAY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oò</td>
+                                    <td>-H*O</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oó</td>
+                                    <td>-S*O</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oă</td>
+                                    <td>*-U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oạ</td>
+                                    <td>N-U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oả</td>
+                                    <td>-HSU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oắ</td>
+                                    <td>-S*U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oằ</td>
+                                    <td>-H*U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oẳ</td>
+                                    <td>-HS*U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oẵ</td>
+                                    <td>N-S*U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oặ</td>
+                                    <td>N*-U</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oẹ</td>
+                                    <td>N-AY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oẻ</td>
+                                    <td>-HSAY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oẽ</td>
+                                    <td>N-SAY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>oọ</td>
+                                    <td>N*-O</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>u</td>
+                                    <td>-IU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ua</td>
+                                    <td>-UO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uy</td>
+                                    <td>-UY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uya</td>
+                                    <td>-EY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uyê</td>
+                                    <td>-EY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uyế</td>
+                                    <td>-SEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uyề</td>
+                                    <td>-HEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uyể</td>
+                                    <td>-HSEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uyễ</td>
+                                    <td>N-SEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uyệ</td>
+                                    <td>N-EY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uâ</td>
+                                    <td>*-Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uê</td>
+                                    <td>-UE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uô</td>
+                                    <td>-UO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uý</td>
+                                    <td>-SUY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uýa</td>
+                                    <td>-SEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uơ</td>
+                                    <td>-Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uấ</td>
+                                    <td>-S*Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uầ</td>
+                                    <td>-H*Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uẩ</td>
+                                    <td>-HS*Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uẫ</td>
+                                    <td>N-S*Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uậ</td>
+                                    <td>N*-Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uế</td>
+                                    <td>-SUE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uề</td>
+                                    <td>-HUE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uể</td>
+                                    <td>-HSUE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uễ</td>
+                                    <td>N-SUE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uệ</td>
+                                    <td>N-UE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uố</td>
+                                    <td>-SUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uồ</td>
+                                    <td>-HUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uổ</td>
+                                    <td>-HSUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỗ</td>
+                                    <td>N-SUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uộ</td>
+                                    <td>N-UO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uớ</td>
+                                    <td>-SY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uờ</td>
+                                    <td>-HY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uở</td>
+                                    <td>-HSY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỡ</td>
+                                    <td>N-SY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uợ</td>
+                                    <td>N-Y</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỳ</td>
+                                    <td>-HUY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỳa</td>
+                                    <td>-HEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỵ</td>
+                                    <td>N-UY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỵa</td>
+                                    <td>N-EY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỷ</td>
+                                    <td>-HSUY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỷa</td>
+                                    <td>-HSEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỹ</td>
+                                    <td>N-SUY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>uỹa</td>
+                                    <td>N-SEY</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>y</td>
+                                    <td>-I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>yê</td>
+                                    <td>-IE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>yế</td>
+                                    <td>-SIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>yề</td>
+                                    <td>-HIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>yể</td>
+                                    <td>-HSIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>yễ</td>
+                                    <td>N-SIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>yệ</td>
+                                    <td>N-IE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>à</td>
+                                    <td>-HA</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>á</td>
+                                    <td>-SA</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>â</td>
+                                    <td>*-W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ã</td>
+                                    <td>N-SA</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>è</td>
+                                    <td>-HE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>é</td>
+                                    <td>-SE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ê</td>
+                                    <td>-OE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ì</td>
+                                    <td>-H*I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ìa</td>
+                                    <td>-HIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>í</td>
+                                    <td>-S*I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ía</td>
+                                    <td>-SIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ò</td>
+                                    <td>-HO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ó</td>
+                                    <td>-SO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ô</td>
+                                    <td>-OW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>õ</td>
+                                    <td>N-SO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ù</td>
+                                    <td>-HIU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ùa</td>
+                                    <td>-HUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ú</td>
+                                    <td>-SIU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>úa</td>
+                                    <td>-SUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ý</td>
+                                    <td>-SI</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ă</td>
+                                    <td>*-A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ĩ</td>
+                                    <td>N-S*I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ĩa</td>
+                                    <td>N-SIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ũ</td>
+                                    <td>N-SIU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ũa</td>
+                                    <td>N-SUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ơ</td>
+                                    <td>-W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ư</td>
+                                    <td>-UW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ưa</td>
+                                    <td>-EW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ươ</td>
+                                    <td>-EW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ướ</td>
+                                    <td>-SEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ườ</td>
+                                    <td>-HEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ưở</td>
+                                    <td>-HSEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ưỡ</td>
+                                    <td>N-SEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ượ</td>
+                                    <td>N-EW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ạ</td>
+                                    <td>N-A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ả</td>
+                                    <td>-HSA</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ấ</td>
+                                    <td>-S*W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ầ</td>
+                                    <td>-H*W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ẩ</td>
+                                    <td>-HS*W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ẫ</td>
+                                    <td>N-S*W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ậ</td>
+                                    <td>N*-W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ắ</td>
+                                    <td>-S*A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ằ</td>
+                                    <td>-H*A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ẳ</td>
+                                    <td>-HS*A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ẵ</td>
+                                    <td>N-S*A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ặ</td>
+                                    <td>N*-A</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ẹ</td>
+                                    <td>N-E</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ẻ</td>
+                                    <td>-HSE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ẽ</td>
+                                    <td>N-SE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ế</td>
+                                    <td>-SOE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ề</td>
+                                    <td>-HOE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ể</td>
+                                    <td>-HSOE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ễ</td>
+                                    <td>N-SOE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ệ</td>
+                                    <td>N-OE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỉ</td>
+                                    <td>-HS*I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỉa</td>
+                                    <td>-HSIE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ị</td>
+                                    <td>N*-I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ịa</td>
+                                    <td>N-IE</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ọ</td>
+                                    <td>N-O</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỏ</td>
+                                    <td>-HSO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ố</td>
+                                    <td>-SOW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ồ</td>
+                                    <td>-HOW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ổ</td>
+                                    <td>-HSOW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỗ</td>
+                                    <td>N-SOW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ộ</td>
+                                    <td>N-OW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ớ</td>
+                                    <td>-SW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ờ</td>
+                                    <td>-HW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ở</td>
+                                    <td>-HSW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỡ</td>
+                                    <td>N-SW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ợ</td>
+                                    <td>N-W</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ụ</td>
+                                    <td>N-IU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ụa</td>
+                                    <td>N-UO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ủ</td>
+                                    <td>-HSIU</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ủa</td>
+                                    <td>-HSUO</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ứ</td>
+                                    <td>-SUW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ứa</td>
+                                    <td>-SEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ừ</td>
+                                    <td>-HUW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ừa</td>
+                                    <td>-HEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ử</td>
+                                    <td>-HSUW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ửa</td>
+                                    <td>-HSEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ữ</td>
+                                    <td>N-SUW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ữa</td>
+                                    <td>N-SEW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ự</td>
+                                    <td>N-UW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ựa</td>
+                                    <td>N-EW</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỳ</td>
+                                    <td>-HI</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỵ</td>
+                                    <td>N-I</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỷ</td>
+                                    <td>-HSI</td>
+                                    <td>Âm chính</td>
+                                </tr>
+                                <tr>
+                                    <td>ỹ</td>
+                                    <td>N-SI</td>
+                                    <td>Âm chính</td>
+                                </tr>
+
+
+
+                                <tr>
+                                    <td>p</td>
+                                    <td>-TK</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>c</td>
+                                    <td>-NK</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>t</td>
+                                    <td>-NT</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>ch</td>
+                                    <td>-GK</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>u</td>
+                                    <td>-JG</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>ng</td>
+                                    <td>-G</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>i</td>
+                                    <td>-J</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>y</td>
+                                    <td>-JN</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>nh</td>
+                                    <td>-K</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>m</td>
+                                    <td>-T</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>n</td>
+                                    <td>-N</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+                                <tr>
+                                    <td>o</td>
+                                    <td>-JK</td>
+                                    <td>Âm cuối</td>
+                                </tr>
+
+
+
+                            
+                            
+                            </table>
+                              
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container">
