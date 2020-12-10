@@ -292,3 +292,29 @@ $(".container").css("width", "1238px"); */
 .button-group {
     padding-left: 30px;
 }
+
+.center {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.label-roadmap {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+.text-span{
+    background: #1cb0f6;
+    border-radius: 50%;
+    height: 100px !important;
+    width: 100px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#pinkcircle img {
+    width: 85px;
+}
