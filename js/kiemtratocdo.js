@@ -25,6 +25,7 @@ let cpm_group = document.querySelector(".cpm");
 let wpm_group = document.querySelector(".wpm");
 let error_group = document.querySelector(".errors");
 let accuracy_group = document.querySelector(".accuracy");
+let finish_Result = document.querySelector(".finishResult");
 
 let timeLeft = TIME_LIMIT;
 let timeElapsed = 0;
@@ -142,6 +143,7 @@ function finishGame() {
   // display restart button
   restart_btn.style.display = "block";
 
+
   // calculate cpm and wpm
   cpm = Math.round(((characterTyped / timeElapsed) * 60));
   wpm = Math.round((((characterTyped / 5) / timeElapsed) * 60));
@@ -177,11 +179,12 @@ function resetValues() {
   input_area.disabled = false;
 
   input_area.value = "";
-  quote_text.textContent = 'Click on the area below to start the game.';
+  quote_text.textContent = 'Ấn vào khoảng trắng để bắt đầu game';
   accuracy_text.textContent = 100;
   timer_text.textContent = timeLeft + 's';
   error_text.textContent = 0;
-  restart_btn.style.display = "none";
+  restart_btn.style.display = "true";
   cpm_group.style.display = "none";
   wpm_group.style.display = "none";
+  
 }

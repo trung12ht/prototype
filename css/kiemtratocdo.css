@@ -23,7 +23,7 @@ body {
    
    .timer, .errors, .accuracy, 
    .cpm, .wpm { 
-   background-color: #ccda46; 
+   background-color: #39b3e0; 
    height: 80px; 
    width: 80px; 
    margin: 6px; 
@@ -50,7 +50,7 @@ body {
    } 
    
    .quote { 
-   background-color: #ccda46; 
+   background-color: #39b3e0; 
    font-size: 1.5rem; 
    margin: 10px; 
    padding: 25px; 
@@ -63,7 +63,7 @@ body {
    }
    
    .input_area { 
-   background-color: #f5f5c6; 
+   background-color: white; 
    height: 80px; 
    width: 75%; 
    font-size: 1.5rem; 
@@ -74,7 +74,7 @@ body {
    } 
    
    .restart_btn { 
-   display: none; 
+   display: true; 
    background-color: #326765; 
    font-size: 1.5rem; 
    padding: 10px; 
@@ -90,4 +90,4 @@ body {
    .correct_char { 
    color: darkgreen; 
    } 
-   
+ 
