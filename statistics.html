@@ -12,23 +12,31 @@
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/bootstrap.js"></script>
 
+    <link rel="icon" href="https://apprecs.org/ios/images/app-icons/256/c7/1231761863.jpg">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="chart/linechartdemo.js"></script>
     <script src="chart/radarchart.js"></script>
     <script src="chart/multiserieschartdemo.js"></script>
+    <script src="chart/doughnutchart.js"></script>
     <script src="chart/demochart.js"></script>
+    <script src="chart/barchart.js"></script>
 
-    <title>Document</title>
+    <title>Tốc Ký Top 1</title>
 </head>
 <script>
-    $(function() {
+    $(function () {
         // $('#lineChart').Lazy();
         // $('.chartdemo').Lazy();
         // $('#radarChart').Lazy();
         // $('#multiSeriesChart').Lazy();
     });
 </script>
+
 <body>
     <div class="trapezoid1"></div>
     <div class="container">
@@ -41,12 +49,14 @@
                     <div class="trapezoid">
                         <div class="button-group">
                             <a href="index.html">
-                                <button type="button" class="btn btn-primary button-nav" style="width: 120px;">Học</button>
+                                <button type="button" class="btn btn-primary button-nav"
+                                    style="width: 120px;">Học</button>
                             </a>
                             <a href="luyentap.html">
                                 <button type="button" class="btn btn-primary button-nav">Luyện tập</button>
                             </a>
-                            <button type="button" class="btn btn-secondary button-nav-active" style="width: 160px;">Thống kê</button>
+                            <button type="button" class="btn btn-secondary button-nav-active"
+                                style="width: 160px;">Thống kê</button>
                             <a href="kiemtra.html">
                                 <button type="button" class="btn btn-primary button-nav">Kiểm tra</button>
                             </a>
@@ -56,16 +66,173 @@
             </div>
         </div>
     </div>
-    <div class="chartdemo">
-      <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div id="lineChart" style="height: 300px; width: 100%; background-color: black; margin: 40px 40px;"></div>
-            <canvas id="radarChart" width="undefined" height="220px" style="background-color: white; margin: 40px 40px;"></canvas>
-            <div id="multiSeriesChart" style="height: 300px; width: 100%; margin: 40px 40px;"></div>
+    <div class="chartdemo" style="background-color: white;">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10"
+                style="display:flex;justify-content:center;align-items:center;  padding-top: 2%; padding-bottom: 2%;">
+                <b style="font-size: 30px; font-weight: bold; color: yellowgreen;">HÀNG NGÀY</b>
+            </div>
+            <div class="col-sm-1"></div>
         </div>
-        <div class="col-sm-3"></div>
-      </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div id="lineChart" style="height: 200px; width: 100%; background-color: black; margin: 40px 40px;">
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <div class="chartdemo2" style="background-color: yellowgreen;">
+        <div class="row" style="height: 120px">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10"
+                style="display:flex;justify-content:center;align-items:center; padding-top: 2%; padding-bottom: 2%;">
+                <b style="font-size: 30px; font-weight: bold; color: whitesmoke;">TỔNG QUAN</b>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row" style="height:250px;">
+            <div class="col-sm-3">
+                <div style="background-color: lightgreen; margin: 20px; height: 70%;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <i class="fas fa-keyboard" style="font-size: 70px; padding-top: 54px; padding-left: 30px;"></i>
+                        </div>
+                        <div class="col-sm-7">
+                            <div style="font-size: 1em; padding-top: 54px; text-align: right; margin: 0px 20px 0px 0px;">
+                                <i style="font-size: 1.1em; color: blue">Bài đã học</i>
+                                <p>27/<b>72</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div style="background-color: lightgreen; margin: 20px; height: 70%;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <i class="fas fa-award" style="font-size: 70px; padding-top: 54px; padding-left: 30px;"></i>
+                        </div>
+                        <div class="col-sm-7">
+                            <div style="font-size: 1em; padding-top: 54px; text-align: right; margin: 0px 20px 0px 0px;">
+                                <i style="font-size: 1.1em; color: blue">Bài luyện tập</i>
+                                <p>24/<b>74</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div style="background-color: lightgreen; margin: 20px; height: 70%;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <i class="fas fa-diagnoses" style="font-size: 70px; padding-top: 54px; padding-left: 30px;"></i>
+                        </div>
+                        <div class="col-sm-7">
+                            <div style="font-size: 1em; padding-top: 54px; text-align: right; margin: 0px 20px 0px 0px;">
+                                <i style="font-size: 1.1em; color: blue; word-wrap: inherit;">Bài kiểm tra</i>
+                                <p>42</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div style="background-color: lightgreen; margin: 20px; height: 70%;">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <i class="fas fa-hourglass-half" style="font-size: 70px; padding-top: 54px; padding-left: 30px;"></i>
+                        </div>
+                        <div class="col-sm-7">
+                            <div style="font-size: 1em; padding-top: 54px; text-align: right; margin: 0px 20px 0px 0px;">
+                                <i style="font-size: 1.1em; color: blue">Giờ gõ</i>
+                                <p>2.2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5" style="display:flex;justify-content:center;align-items:center;">
+                <canvas id="radarChart" style="background-color: white;"></canvas>
+            </div>
+            <div class="col-sm-5" style="max-height: 100px !important;">
+                <div id="multiSeriesChart"></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div style="height: 60px"></div>
+    </div>
+    <div class="chartdemo3" style="background-color: yellow; height: 490px; display: block;">
+        <div class="row" style="height: 120px">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10"
+                style="display:flex;justify-content:center;align-items:center;  padding-top: 2%; padding-bottom: 2%;">
+                <b style="font-size: 30px; font-weight: bold; color: blueviolet">LUYỆN TẬP</b>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row" style="background-color: yellow;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <canvas id="barchart1" style="display:flex;justify-content:center;align-items:center; background-color: white;"></div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div style="height: 60px; background-color: yellow;" ></div>
+        <div class="row" style="background-color: yellow;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <canvas id="barchart2" style="display:flex;justify-content:center;align-items:center; background-color: white;"></div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div style="height: 60px; background-color: yellow;" ></div>
+        <div class="row" style="background-color: yellow;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <canvas id="barchart3" style="display:flex;justify-content:center;align-items:center; background-color: white;"></div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div style="height: 60px; background-color: yellow;" ></div>
+        <div class="row" style="background-color: yellow;">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <canvas id="barchart4" style="display:flex;justify-content:center;align-items:center; background-color: white;"></div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div style="height: 100px; background-color: yellow;" ></div>
+    </div>
+    <div class="chartdemo4" style="background-color: white;">
+        <div class="row" style="height: 120px">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10"
+                style="display:flex;justify-content:center;align-items:center;  padding-top: 2%; padding-bottom: 2%;">
+                <b style="font-size: 30px; font-weight: bold; color: yellowgreen;">KIỂM TRA</b>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row" style="background-color: white; height: 400px">
+            <div class="col-sm-3" style="max-height: 100px !important;">
+                <div id="pieChartAmDau" style="background-color: white;"></div>
+            </div>
+            <div class="col-sm-3" style="max-height: 100px !important;">
+                <div id="pieChartAmChinh" style="background-color: white;"></div>
+            </div>
+            <div class="col-sm-3" style="max-height: 100px !important;">
+                <div id="pieChartAmCuoi" style="background-color: white;"></div>
+            </div>
+            <div class="col-sm-3" style="max-height: 100px !important;">
+                <div id="pieChartSo" style="background-color: white;"></div>
+            </div>
+        </div>
+        <div style="height: 60px; background-color: white;" ></div>
     </div>
 </body>
 
