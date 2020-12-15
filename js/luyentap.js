@@ -126,11 +126,24 @@ onload = function () {
     startHeader = "Thực hành: gõ âm chính (ơ, ớ, ờ, ở, ợ, ỡ)";
 
     $('span').each(function(index) {
+        console.log(startHeader);
         //do stuff
-        if ($(this).text() == startHeader) {
-            $(this).parent().addClass('wj-state-selected');
-            rootSelect = $(this).parent();
-        }
+        // setTimeout ( function() {
+            if ($(this).text() == "Nguyên tắc gõ tốc ký (âm đầu) (10/10)") {
+                $(this).parent().removeClass('wj-state-selected');
+                $(this).parent().addClass('wj-state-collapsed');
+                // rootSelect = $(this).parent();
+            }
+            if ($(this).text() == "Nguyên tắc gõ tốc ký (âm chính) (8/39)") {
+                $(this).parent().addClass('wj-state-selected');
+                $(this).parent().removeClass('wj-state-collapsed');
+                rootSelect = $(this).parent();
+            }
+            if (index == 18) {
+                $(this).parent().addClass('wj-state-selected');
+                $(this).parent().removeClass('wj-state-collapsed');
+            }
+        // }.bind(this),10000);
     });
     $("#theTree .wj-nodelist .wj-nodelist span").click(function() {
         if (initSelect) {

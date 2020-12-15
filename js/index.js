@@ -51,14 +51,14 @@ onload = function() {
     // $("#theTree").on("click", "span", function() {
     //     console.log( $(this).index() );
     // });
-    $(".main-content").html(setMainContent(rsArray[0]));
+    $(".main-content").html(setMainContent(rsArray[7]));
     var initSelect = true;
     var rootSelect;
-    var StringVal = 'Bàn phím gõ tốc ký (Steno)';
-    var index = 0;
+    var StringVal = "QUY TẮC GÕ ÂM CHÍNH : ÂM GỐC LÀ ÂM ĐỆM + NGUYÊN ÂM";
+    var index = 7;
 
     $('.btn-primary .fa-long-arrow-alt-left').click(function() {
-        if (index == 0) return;
+        if (index == 7) return;
         initSelect = true;
         StringVal = rsArray[index].header;
         $('span').each(function(indexx) {
@@ -68,15 +68,15 @@ onload = function() {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
-                if (index == 12) {
+                if (index == 5) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
-                if (index == 46) {
+                if (index == 9) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
-                if (index == 48) {
+                if (index == 10) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
@@ -105,15 +105,15 @@ onload = function() {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().next().removeClass('wj-state-collapsed');
                 }
-                if (index == 11) {
+                if (index == 4) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().next().removeClass('wj-state-collapsed');
                 }
-                if (index == 45) {
+                if (index == 8) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().next().removeClass('wj-state-collapsed');
                 }
-                if (index == 47) {
+                if (index == 9) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().next().removeClass('wj-state-collapsed');
                 }
@@ -132,9 +132,19 @@ onload = function() {
 
     $('span').each(function(index) {
         //do stuff
-        if ($(this).text() == StringVal) {
+        if ($(this).text() == "Giới thiệu bàn phím gõ tốc ký tiếng Việt (4/4)") {
+            $(this).parent().removeClass('wj-state-selected');
+            $(this).parent().addClass('wj-state-collapsed');
+            // rootSelect = $(this).parent();
+        }
+        if ($(this).text() == "Nguyên tắc gõ tốc ký (âm chính) (3/4)") {
             $(this).parent().addClass('wj-state-selected');
+            $(this).parent().removeClass('wj-state-collapsed');
             rootSelect = $(this).parent();
+        }
+        if (index == 14) {
+            $(this).parent().addClass('wj-state-selected');
+            $(this).parent().removeClass('wj-state-collapsed');
         }
     });
     $("#theTree .wj-nodelist .wj-nodelist span").click(function() {
