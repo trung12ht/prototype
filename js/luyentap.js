@@ -185,7 +185,8 @@ onload = function () {
     height: 60px !important;
     margin-left: 18px !important;
 ">
-<a href="gophim.html?tab=2&index=${index}">
+
+<a href="gophimnew.html?action=learn&type=key&tab=2&index=${index}">
         <img src="https://cdn0.iconfinder.com/data/icons/design-and-usability/64/typing_keyboard_icon_hands_type_developer_interface_work-512.png" style="
         width: 50px;
     ">

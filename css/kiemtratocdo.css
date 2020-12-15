@@ -49,12 +49,12 @@ body {
    
    } 
    
-   .quote { 
-   background-color: #39b3e0; 
-   font-size: 1.5rem; 
-   margin: 10px; 
-   padding: 25px; 
-   height: 100px;
+   .quote {
+   background-color: #39b3e0;
+   font-size: 1.5rem;
+   /* margin: 10px; */
+   /* padding: 25px; */
+   /* height: 100px; */
    width: 75%;
    }
 
@@ -62,15 +62,14 @@ body {
       display: inline !important;
    }
    
-   .input_area { 
-   background-color: white; 
-   height: 80px; 
-   width: 75%; 
-   font-size: 1.5rem; 
-   font-weight: 600; 
-   margin: 15px; 
-   padding: 20px; 
-   border: 0px;  
+   .input_area {
+   background-color: white;
+   width: 75%;
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin: 10px;
+   padding: 20px;
+   border: 0px;
    } 
    
    .restart_btn { 
