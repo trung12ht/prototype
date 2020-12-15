@@ -8,6 +8,7 @@ if (DEV_DEMO) {
     createBarChart2();
     createBarChart3();
     createBarChart4();
+    createMultiBarChart();
     createDoughnutChart1();
     createDoughnutChart2();
     createDoughnutChart3();

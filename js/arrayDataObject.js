@@ -1,10 +1,10 @@
 arrayDataObject = [
     {
-        "header": "Giới thiệu bàn phím gõ tốc ký tiếng Việt",
+        "header": "Giới thiệu bàn phím gõ tốc ký tiếng Việt (4/4)",
         "items": [
             {
                 "type": "view",
-                "header": "Bàn phím gõ tốc ký (Steno)",
+                "header": "Bàn phím gõ tốc ký (Steno) (v)",
                 "content": [
                     "Bàn phím gõ tốc ký tiếng Việt gồm 22 phím + 1 phím dài\n• 4 phím đặc biệt (S, T, H, N), nhãn trùng nhau nhưng vai trò khác nhau\n• 1 phím dài để chuyển chế độ gõ số"
                 ],
@@ -14,7 +14,7 @@ arrayDataObject = [
             },
             {
                 "type": "view",
-                "header": "Cách đặt ngón tay trên bàn phím tốc ký",
+                "header": "Cách đặt ngón tay trên bàn phím tốc ký  (v)",
                 "content": [
                     "Cách đặt ngón tay trong trường hợp gõ từ",
                     "Cách đặt ngón tay trong trường hợp gõ số"
@@ -26,7 +26,7 @@ arrayDataObject = [
             },
             {
                 "type": "view",
-                "header": "Trật tự của bàn phím gõ tốc ký",
+                "header": "Trật tự của bàn phím gõ tốc ký  (v)",
                 "content": [
                     "• Trật tự của bàn phím theo chiều mũi tên (S T K P R H N H S * I U O E A W Y J N G T K), từ trái qua phải, từ trên xuống dưới.\n• Bất cứ tổ hợp phím nào phù hợp với trật tự này thì đều có thể gõ trong một lượt nhấn.\n• Việc ghi nhớ trật tự các phím là rất quan trọng vì bàn phím gõ tốc ký tiếng Việt gồm nhiều phím trùng nhau, tuy nhiên mỗi vị trí lại có chức năng khác nhau."
                 ],
@@ -36,17 +36,17 @@ arrayDataObject = [
             },
             {
                 "type": "practice",
-                "header": "Thực hành: làm quen với bàn phím tốc ký tiếng Việt"
+                "header": "Thực hành: làm quen với bàn phím tốc ký tiếng Việt (v)"
                 , "image": "slide12.png"
             }
         ]
     },
     {
-        "header": "Nguyên tắc gõ tốc ký (âm đầu)",
+        "header": "Nguyên tắc gõ tốc ký (âm đầu) (1/1)",
         "items": [
             {
                 "type": "view",
-                "header": "QUY TẮC GÕ ÂM ĐẦU",
+                "header": "QUY TẮC GÕ ÂM ĐẦU (v)",
                 "content": [
                     "1.1. Nhóm các phụ âm có cùng dạng chữ, cùng phát âm với phím tốc kí và không cần ghi nhớ (10)",
                     "1.2. Nhóm các phụ âm có cách phát âm giống nhau hoặc gần nhau (5)",
@@ -60,49 +60,14 @@ arrayDataObject = [
                     "slide22.png"
                 ]
             },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm đầu (gh, g, ngh, ng)"
-                , "image": "slide23.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm đầu (q, k, c, d, gi)"
-                , "image": "slide23.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm đầu (nh, đ, ch, l, m)"
-                , "image": "slide24.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm đầu (n, b, v, x, p)"
-                , "image": "slide24.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm đầu (s, t, th, h)"
-                , "image": "slide25.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm đầu (kh, r, ph, tr)"
-                , "image": "slide25.png"
-            },
-            {
-                "type": "practice",
-                "header": "Luyện ngón – gõ âm đầu bất kỳ"
-                , "image": "no"
-            }
         ]
     },
     {
-        "header": "Nguyên tắc gõ tốc ký (âm chính)",
+        "header": "Nguyên tắc gõ tốc ký (âm chính) (3/4)",
         "items": [
             {
                 "type": "view",
-                "header": "QUY TẮC GÕ ÂM CHÍNH",
+                "header": "QUY TẮC GÕ ÂM CHÍNH (v)",
                 "content": [
                     "• Sử dụng 11 phím ở giữa bàn phím để gõ âm chính là NHS*IUOEAWY. Trong đó sử dụng 3 phím NHS để gõ thanh điệu, 8 phím còn lại gõ phần âm đệm và âm chính.\n• Các nguyên âm đơn ngắn là biến thể của các nguyên âm dài phân biệt bằng cách gõ thêm phím * ở trước."
                 ],
@@ -112,7 +77,7 @@ arrayDataObject = [
             },
             {
                 "type": "view",
-                "header": "QUY TẮC GÕ ÂM CHÍNH : BIẾN ÂM (NHỮNG ÂM CÓ DẤU THANH)",
+                "header": "QUY TẮC GÕ ÂM CHÍNH : BIẾN ÂM (NHỮNG ÂM CÓ DẤU THANH) (v)",
                 "content": [
                     "Sử dụng 3 phím: NHS để gõ 5 thanh điệu tiếng Việt: huyền, nặng, sắc, ngã, hỏi",
                     "2.1. Nhóm các dấu thanh có đường nét thẳng, 1 hướng (3)",
@@ -137,7 +102,7 @@ arrayDataObject = [
             },
             {
                 "type": "view",
-                "header": "QUY TẮC GÕ ÂM CHÍNH : ÂM GỐC LÀ NGUYÊN ÂM (KHÔNG CÓ DẤU THANH)",
+                "header": "QUY TẮC GÕ ÂM CHÍNH : ÂM GỐC LÀ NGUYÊN ÂM (KHÔNG CÓ DẤU THANH) (v)",
                 "content": [
                     "Sử dụng 8 phím: *IUOEAWY để gõ 1 âm đệm (u/o) + 16 nguyên âm tiếng Việt: i/y, ê, e, ư, ơ, a, u, ô, o, e ngắn, ă, â, o ngắn/ iê, ươ, uô.",
                     "2.2.1. Nhóm các nguyên âm có cùng dạng chữ, cùng phát âm với phím tốc kí và không cần ghi nhớ (6)",
@@ -167,160 +132,10 @@ arrayDataObject = [
                     "slide44.png"
                 ]
             },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (u, ụ, ủ)",
-                "image": "slide45.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ũ, ù, ú)",
-                "image": "slide45.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ô, ổ, ố, ỗ, ồ)",
-                "image": "slide46.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ơ, ớ, ờ, ở, ợ, ỡ)",
-                "image": "slide47.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (a, á, ả, à, ã, ạ)",
-                "image": "slide48.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (y, ỳ, ỵ, ỷ, ỹ, ý)",
-                "image": "slide49.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ĩ, i, í, ị, ì, ỉ)",
-                "image": "slide50.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (o, ọ, ỏ, ó, ò, õ)",
-                "image": "slide51.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ă, ằ, ẳ, ắ, ặ, ẵ)",
-                "image": "slide52.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ư, ứ, ử, ừ, ứ, ự)",
-                "image": "slide53.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (â, ấ, ầ, ẩ, ẵ, ậ)",
-                "image": "slide54.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (e, ẻ, è, é, ẹ, ẽ)",
-                "image": "slide55.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ê, ể, ề, ế, ễ, ệ)",
-                "image": "slide56.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (uô, uồ, uỗ, uộ, uổ, uố)",
-                "image": "slide57.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ua, ùa, úa, ụa, ủa, ũa)",
-                "image": "slide57.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (uơ, uớ, uờ, uở, uỡ, uợ)",
-                "image": "slide58.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (uy, ùy, ụy, ủy, úy, ũy)",
-                "image": "slide59.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (uê, uệ, uễ, uề, uế, uể)",
-                "image": "slide60.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (uâ, uấ, uầ, uẩ, uẫ, uậ)",
-                "image": "slide61.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (oă, oắ, oằ, oẳ, oẵ, oặ)",
-                "image": "slide62.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (oe, ọe, ỏe, õe, òe, óe)",
-                "image": "slide63.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (oo, oó, oọ, oò, oõ, oỏ)",
-                "image": "slide64.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (oa, oà, oá, oả, oã, oạ, oả)",
-                "image": "slide65.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ia, ìa, ía, ỉa, ĩa, ịa)",
-                "image": "slide66.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (iê, iể, iế, iễ, iề, iệ)",
-                "image": "slide66.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (yê, yể, yế, yễ, yề, yệ)",
-                "image": "slide66.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ươ, ưở, ườ, ướ, ưỡ, ưở)",
-                "image": "slide67.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (ừa, ữa, ưa, ửa, ứa, ựa)",
-                "image": "slide67.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (uyê, uyế, uyể, uyễ, uyệ, uyề)",
-                "image": "slide68.png"
-            },
-            {
-                "type": "practice",
-                "header": "Thực hành: gõ âm chính (uya, uýa, uỷa, uỹa, uỵa, uỳa)",
-                "image": "slide68.png"
-            }
         ]
     },
     {
-        "header": "Nguyên tắc gõ tốc ký (âm cuối)",
+        "header": "Nguyên tắc gõ tốc ký (âm cuối) (0/1)",
         "items": [
             {
                 "type": "view",
@@ -340,15 +155,10 @@ arrayDataObject = [
                     "slide74.png"
                 ]
             },
-            {
-                "type": "practice",
-                "header": "Thực hành gõ âm cuối",
-                "image": "no"
-            }
         ]
     },
     {
-        "header": "Nguyên tắc gõ tốc ký (gõ số)",
+        "header": "Nguyên tắc gõ tốc ký (gõ số) (0/1)",
         "items": [
             {
                 "type": "view",
@@ -362,11 +172,6 @@ arrayDataObject = [
                     "slide77.png"
                 ]
             },
-            {
-                "type": "practice",
-                "header": "Thực hành gõ số"
-                , "image": "no"
-            }
         ]
     }
 ];

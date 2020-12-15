@@ -5,8 +5,8 @@ var createRadarChart = function() {
       labels: [
         "Tỉ lệ gõ đúng cao nhất",
         "Tỉ lệ gõ đúng trung bình",
-        "Điểm cao nhất",
-        "Điểm trung bình",
+        "% hoàn thành bài học",
+        "% hoàn thành luyện tập",
         "Số ngày luyện tập trong 100 ngày gần đây",
       ],
       datasets: [

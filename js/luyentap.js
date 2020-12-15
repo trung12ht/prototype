@@ -50,28 +50,28 @@ onload = function () {
     // $("#theTree").on("click", "span", function() {
     //     console.log( $(this).index() );
     // });
-    $(".main-content").html(setMainContent(rsArray[0]));
+    $(".main-content").html(setMainContent(rsArray[13]));
     var initSelect = true;
     var rootSelect;
-    var StringVal = 'Luyện tập: gõ âm đầu (Tay trái)';
-    var index = 0;
+    var StringVal = 'Nguyên tắc gõ tốc ký (âm cuối) (0/1)';
+    var index = 13;
 
     $('.btn-primary .fa-long-arrow-alt-left').click(function() {
-        if (index == 0) return;
+        if (index == 13) return;
         initSelect = true;
         StringVal = rsArray[index].header;
         $('span').each(function(indexx) {
             if ($(this).text() == StringVal) {
                 $(this).parent().removeClass('wj-state-selected')
-                if (index == 3) {
+                if (index == 10) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
-                if (index == 12) {
+                if (index == 48) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
-                if (index == 13) {
+                if (index == 52) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
@@ -91,7 +91,7 @@ onload = function () {
 
     $('.btn-primary .fa-long-arrow-alt-right').click(function() {
         console.log("aaaa");
-        if (index == 13) return;
+        if (index == 52) return;
         initSelect = true;
         StringVal = rsArray[index].header;
         $('span').each(function(indexx) {
@@ -144,7 +144,9 @@ onload = function () {
     });
 
 
-
+    function checkLearned(text) {
+        return text.indexOf("(v)") !== -1;
+    };
     // {"type":"view","header":"Bàn phím gõ tốc ký (Steno)","content":
     // ["Bàn phím gõ tốc ký tiếng Việt gồm 22 phím + 1 p
     // hím dài\n• 4 phím đặc biệt (S, T, H, N), nhãn t
@@ -166,14 +168,16 @@ onload = function () {
         //     <input class="keyboard" type="text" />
         // </div>`;
 
+        var head = checkLearned(obj.header) ? '<b>'+obj.header+'</b>' : obj.header;
+
         rsHTML = `
-        <p style="white-space: pre-line">${obj.header}</p>
+        <p style="white-space: pre-line">${head}</p>
         `
         if (obj.image != 'no') {
             rsHTML += `<img src="img/${obj.image}"></img>`
         }
         if (index==undefined) {
-            index = 0;
+            index = 52;
         }
         rsHTML += `
         <div style='margin-left: 269px;'>
