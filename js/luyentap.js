@@ -53,7 +53,7 @@ onload = function () {
     $(".main-content").html(setMainContent(rsArray[13]));
     var initSelect = true;
     var rootSelect;
-    var StringVal = 'Nguyên tắc gõ tốc ký (âm cuối) (0/1)';
+    var StringVal = 'Thực hành: gõ âm chính (ơ, ớ, ờ, ở, ợ, ỡ)';
     var index = 13;
 
     $('.btn-primary .fa-long-arrow-alt-left').click(function() {
@@ -67,11 +67,11 @@ onload = function () {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
-                if (index == 48) {
+                if (index == 49) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
-                if (index == 52) {
+                if (index == 53) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().prev().prev().prev().removeClass('wj-state-collapsed');
                 }
@@ -97,15 +97,15 @@ onload = function () {
         $('span').each(function(indexx) {
             if ($(this).text() == StringVal) {
                 $(this).parent().removeClass('wj-state-selected');
-                if (index == 2) {
+                if (index == 9) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().next().removeClass('wj-state-collapsed');
                 }
-                if (index == 11) {
+                if (index == 48) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().next().removeClass('wj-state-collapsed');
                 }
-                if (index == 12) {
+                if (index == 52) {
                     $(this).parent().parent().prev().addClass('wj-state-collapsed');
                     $(this).parent().parent().next().removeClass('wj-state-collapsed');
                 }
@@ -123,9 +123,11 @@ onload = function () {
         });
     })
 
+    startHeader = "Thực hành: gõ âm chính (ơ, ớ, ờ, ở, ợ, ỡ)";
+
     $('span').each(function(index) {
         //do stuff
-        if ($(this).text() == StringVal) {
+        if ($(this).text() == startHeader) {
             $(this).parent().addClass('wj-state-selected');
             rootSelect = $(this).parent();
         }
@@ -177,7 +179,7 @@ onload = function () {
             rsHTML += `<img src="img/${obj.image}"></img>`
         }
         if (index==undefined) {
-            index = 52;
+            index = 13;
         }
         rsHTML += `
         <div style='margin-left: 269px;'>
