@@ -4,14 +4,13 @@ let TIME_LIMIT = 60;
 
 // define quotes to be used
 let quotes_array = [
-  "Hạt bụi nào hóa kiếp thân tôi, để một mai vươn hình hài lớn dậy?",
-  "Ôi, cát bụi tuyệt vời, mặt trời soi một kiếp rong chơi.",
-  "Hạt bụi nào hoá kiếp thân tôi, để một mai tôi về làm cát bụi?",
-  "Bao nhiêu năm làm kiếp con người chợt một chiều tóc trắng như vôi",
-  "Lá úa trên cao rụng đầy, cho trăm năm vào chết một ngày",
-  "Mặt trời nào soi sáng tim tôi, để tình yêu xay mòn thành đá cuội?"
+  "ttptptptptptptptptptptptptptptptptptptptpyjyjyjyjyjyjyjyjyjyjyjyjyjyjyjy*w*w*w*w*w*w*w*cuccc",
+  "ttptptptptptptptptptptptptptptptptptptptpyjyjyjyjyjyjyjyjyjyjyjyjyjyjyjy*w*w*w*w*w*w*w*cuccc",
+  "ttptptptptptptptptptptptptptptptptptptptpyjyjyjyjyjyjyjyjyjyjyjyjyjyjyjy*w*w*w*w*w*w*w*cuccc",
+  "ttptptptptptptptptptptptptptptptptptptptpyjyjyjyjyjyjyjyjyjyjyjyjyjyjyjy*w*w*w*w*w*w*w*cuccc",
+  "ttptptptptptptptptptptptptptptptptptptptpyjyjyjyjyjyjyjyjyjyjyjyjyjyjyjy*w*w*w*w*w*w*w*cuccc",
+  "ttptptptptptptptptptptptptptptptptptptptpyjyjyjyjyjyjyjyjyjyjyjyjyjyjyjy*w*w*w*w*w*w*w*cuccc"
 ];
-
 // selecting required elements
 let timer_text = document.querySelector(".curr_time");
 let accuracy_text = document.querySelector(".curr_accuracy");
@@ -20,7 +19,7 @@ let cpm_text = document.querySelector(".curr_cpm");
 let wpm_text = document.querySelector(".curr_wpm");
 let quote_text = document.querySelector(".quote");
 let input_area = document.querySelector(".input_area");
-let restart_btn = document.querySelector(".restart_btn");
+// let restart_btn = document.querySelector(".restart_btn");
 let cpm_group = document.querySelector(".cpm");
 let wpm_group = document.querySelector(".wpm");
 let error_group = document.querySelector(".errors");
@@ -31,7 +30,7 @@ let timeLeft = TIME_LIMIT;
 let timeElapsed = 0;
 let total_errors = 0;
 let errors = 0;
-let accuracy = 0;
+let accuracy1 = 0;
 let characterTyped = 0;
 let current_quote = "";
 let quoteNo = 0;
@@ -95,7 +94,7 @@ function processCurrentText() {
   // display the number of errors
   error_text.textContent = total_errors + errors;
 
-  // update accuracy text
+  // update 1 text
   let correctCharacters = (characterTyped - (total_errors + errors));
   let accuracyVal = ((correctCharacters / characterTyped) * 100);
   accuracy_text.textContent = Math.round(accuracyVal);
@@ -141,7 +140,7 @@ function finishGame() {
   quote_text.textContent = "Ấn kiểm tra để bắt đầu lại";
 
   // display restart button
-  restart_btn.style.display = "block";
+  // restart_btn.style.display = "block";
 
 
   // calculate cpm and wpm
@@ -156,9 +155,11 @@ function finishGame() {
   cpm_group.style.display = "block";
   wpm_group.style.display = "block";
 }
-
+let checkFirst = true
 
 function startGame() {
+  if (checkFirst) checkFirst = false;
+  else return;
 
   resetValues();
   updateQuote();
@@ -169,11 +170,12 @@ function startGame() {
 }
 
 function resetValues() {
+  $("#show-header1").html("Đã thực hiện 3/3 lần");
   timeLeft = TIME_LIMIT;
   timeElapsed = 0;
   errors = 0;
   total_errors = 0;
-  accuracy = 0;
+  accuracy1 = 0;
   characterTyped = 0;
   quoteNo = 0;
   input_area.disabled = false;
@@ -183,7 +185,7 @@ function resetValues() {
   accuracy_text.textContent = 100;
   timer_text.textContent = timeLeft + 's';
   error_text.textContent = 0;
-  restart_btn.style.display = "true";
+  // restart_btn.style.display = "true";
   cpm_group.style.display = "none";
   wpm_group.style.display = "none";
   

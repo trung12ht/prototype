@@ -181,7 +181,8 @@ onload = function() {
             }
             rsHTML += `
         <div style='margin-left: 340px;'>
-        <a href="gophim.html?tab=1&index=${index}">
+        <a href="gophimnew.html?action=learn&type=key&tab=1&index=${index}">
+        
         <button type="button" class="btn btn-primary back" style="
     height: 60px !important;
     margin-left: 18px !important;
