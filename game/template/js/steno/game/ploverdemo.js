@@ -1094,7 +1094,6 @@ $(document).keydown(function (event) {
 
         // Create a new Key Object based on the event.
         var key = new Key(event.which);
-
         // Update the appropriate lists
         downKeys[key] = key; // add key to the list of keys currently being pressed down
         chordKeys[key] = key; // add key to the list of keys in this stroke
@@ -1207,6 +1206,7 @@ $(document).keydown(function (event) {
         // event.preventDefault(); // will prevent potential conflicts with browser hotkeys like firefox's hotkey for quicklinks (')
 
         // $('#gophim').trigger(e);
+        // if (event)
 
         function simulateInput() {
             var inp = document.getElementById('gophim');

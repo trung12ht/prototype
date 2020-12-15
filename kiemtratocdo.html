@@ -94,14 +94,12 @@
                 </div>
             </div>
         </div>
+        <div id="show-header1" style="font-size: 32px;">Thực hiện lần 2/3</div>
+        <div id="show-header1" style="font-size: 18px;">(Yêu cầu tốc độ <strong>60 từ/phút</strong> , chính xác <strong>80%</strong>)</div>
         <div class="header">
             <div class="wpm">
                 <div class="header_text">WPM</div>
-                <div class="curr_wpm">100</div>
-            </div>
-            <div class="cpm">
-                <div class="header_text">CPM</div>
-                <div class="curr_cpm">100</div>
+                <div class="curr_wpm" id="wpmNow">0</div>
             </div>
             <div class="errors">
                 <div class="header_text">Lỗi</div>
@@ -116,7 +114,7 @@
                 <div class="curr_accuracy">100</div>
             </div>
         </div>
-        <div id="show-header1" style="font-size: 32px;">Đã thực hiện 2/3 lần</div>
+        <div id="process" style="font-size: 32px;">Tiến độ: <strong id="now"></strong>/<strong id="target"></strong> từ</div>
         <div class="quote">
             Cick vào khoảng trắng để bắt đầu
         </div>

@@ -36,6 +36,19 @@ let current_quote = "";
 let quoteNo = 0;
 let timer = null;
 
+let processNow = $("#now");
+let processTarget = $("#target");
+let wpmNow = $("#wpmNow");
+
+let s = 0;
+for (var i=0;i<quotes_array.length;i++) {
+  s = s+ quotes_array[i].length;
+}
+let nNow = 0;
+processNow.html(nNow);
+// wpmNow.html(0);
+processTarget.html(s);
+
 function updateQuote() {
   quote_text.textContent = null;
   current_quote = quotes_array[quoteNo];
@@ -64,7 +77,7 @@ function processCurrentText() {
 
   // increment total characters typed
   characterTyped++;
-
+  processNow.html(nNow++);
   errors = 0;
 
   quoteSpanArray = quote_text.querySelectorAll('span');
@@ -120,6 +133,7 @@ function updateTimer() {
     // increase the time elapsed
     timeElapsed++;
 
+    wpmNow.html(Math.round(nNow/timeElapsed*60));
     // update the timer text
     timer_text.textContent = timeLeft + "s";
   }
@@ -161,7 +175,7 @@ function startGame() {
   if (checkFirst) checkFirst = false;
   else return;
 
-  resetValues();
+  // resetValues();
   updateQuote();
 
   // clear old and start a new timer
@@ -169,8 +183,15 @@ function startGame() {
   timer = setInterval(updateTimer, 1000);
 }
 
+var resetValuesa = true;
 function resetValues() {
-  $("#show-header1").html("Đã thực hiện 3/3 lần");
+  if (!resetValuesa) {
+    $("#show-header1").html("Đã hết lần thực hiện bài thi");
+    return;
+  }
+  resetValuesa = false;
+  $("#show-header1").html("Thực hiện lần 3/3");
+  checkFirst = true;
   timeLeft = TIME_LIMIT;
   timeElapsed = 0;
   errors = 0;

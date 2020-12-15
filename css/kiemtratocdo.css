@@ -33,7 +33,7 @@ body {
    } 
    
    .cpm, .wpm { 
-   display: none; 
+   /* display: none;  */
    } 
    
    .header_text { 
