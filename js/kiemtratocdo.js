@@ -1,4 +1,12 @@
 
+
+
+var show = false;
+my_function = null;
+let sotu = document.querySelector(".sotu");
+let chinhxac = document.querySelector(".dochinhxac");
+let dieukien = document.querySelector(".dieukien");
+
 // define the time limit
 let TIME_LIMIT = 60;
 
@@ -12,6 +20,9 @@ let quotes_array = [
   "ttptptptptptptptptptptptptptptptptptptptpyjyjyjyjyjyjyjyjyjyjyjyjyjyjyjy*w*w*w*w*w*w*w*cuccc"
 ];
 // selecting required elements
+// $sotu = $("#sotu"),
+// $dochinhxac = $('#dochinhxac'),
+
 let timer_text = document.querySelector(".curr_time");
 let accuracy_text = document.querySelector(".curr_accuracy");
 let error_text = document.querySelector(".curr_errors");
@@ -39,6 +50,8 @@ let timer = null;
 let processNow = $("#now");
 let processTarget = $("#target");
 let wpmNow = $("#wpmNow");
+
+let finished = false;
 
 let s = 0;
 for (var i=0;i<quotes_array.length;i++) {
@@ -111,7 +124,7 @@ function processCurrentText() {
   let correctCharacters = (characterTyped - (total_errors + errors));
   let accuracyVal = ((correctCharacters / characterTyped) * 100);
   accuracy_text.textContent = Math.round(accuracyVal);
-
+  chinhxac.textContent =  Math.round(accuracyVal);
   // if current text is completely typed
   // irrespective of errors
   if (curr_input.length == current_quote.length) {
@@ -135,7 +148,7 @@ function updateTimer() {
 
     wpmNow.html(Math.round(nNow/timeElapsed*60));
     // update the timer text
-    timer_text.textContent = timeLeft + "s";
+    if(timer_text)timer_text.textContent = timeLeft + "s";
   }
   else {
     // finish the game
@@ -143,9 +156,13 @@ function updateTimer() {
   }
 }
 
+
+
 function finishGame() {
   // stop the timer
+
   clearInterval(timer);
+  finished = true;
 
   // disable the input area
   input_area.disabled = true;
@@ -162,12 +179,17 @@ function finishGame() {
   wpm = Math.round((((characterTyped / 5) / timeElapsed) * 60));
 
   // update cpm and wpm text
-  cpm_text.textContent = cpm;
-  wpm_text.textContent = wpm;
-
+  if(cpm_text) cpm_text.textContent = cpm;
+  if(wpm_text) wpm_text.textContent = wpm;
+  if(sotu) sotu.textContent = wpm;
   // display the cpm and wpm
-  cpm_group.style.display = "block";
-  wpm_group.style.display = "block";
+  if(cpm_group) cpm_group.style.display = "block";
+  if(wpm_group) wpm_group.style.display = "block";
+  console.log("haha",chinhxac)
+  console.log("haha",wpm)
+  if(wpm>60&&parseInt(chinhxac.textContent)>8&&dieukien) dieukien.textContent = "Bạn đã vượt qua";
+  console.log("entered");
+  my_function();
 }
 let checkFirst = true
 
@@ -207,7 +229,52 @@ function resetValues() {
   timer_text.textContent = timeLeft + 's';
   error_text.textContent = 0;
   // restart_btn.style.display = "true";
-  cpm_group.style.display = "none";
-  wpm_group.style.display = "none";
+  if(cpm_group) cpm_group.style.display = "none";
+  if(wpm_group) wpm_group.style.display = "none";
   
+}
+
+
+$(function() {
+  
+
+  var $accountDelete       = $('#delete-account'),
+    $accountDeleteDialog = $('#confirm-delete'),
+   
+
+    transition;
+    function my_func(){
+      $accountDeleteDialog[0].showModal();
+    transition = window.setTimeout(function() {
+        $accountDeleteDialog.addClass('dialog-scale');
+
+    }, 0.5);
+
+    }
+    my_function = my_func;
+
+  $('#cancel').on('click', function() {
+    $accountDeleteDialog[0].close();
+    $accountDeleteDialog.removeClass('dialog-scale');
+    clearTimeout(transition);
+    window.location.href = "./kiemtra.html";
+  });
+  $('#ok').on('click', function() {
+    $accountDeleteDialog[0].close();
+    $accountDeleteDialog.removeClass('dialog-scale');
+    clearTimeout(transition);
+    // window.location.;
+  });
+  $('#nextex').on('click', function() {
+    $accountDeleteDialog[0].close();
+    $accountDeleteDialog.removeClass('dialog-scale');
+    clearTimeout(transition);
+    window.location.reload();
+  });
+
+})
+function handleOpen(){
+  
+  my_function();
+ 
 }

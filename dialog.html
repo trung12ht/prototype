@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  
+  <meta charset="UTF-8">
+  <title>CodePen - Native Popups and Modals With HTML5’s “dialog” Element (demo 5)</title>
+  <link rel="stylesheet" href="./dialog.css">
+  
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="site-content cf">
+  <div class="boxed-group dangerzone">
+
+    <h3>Account</h3>
+
+    <div class="boxed-group-inner">
+      <section>
+
+        <button class="btn btn-danger boxed-action" id="delete-account" onclick="handle()">Delete Account</button>
+
+        <dialog id="confirm-delete" class="site-dialog">
+          <header class="dialog-header">
+            <h1>Kết thúc kiểm tra</h1>
+          </header>
+          
+          <div class="dialog-content">
+            <h4 style="text-align: center;">Kết quả kiểm tra: </h4>
+            <br>
+            <table style="padding-left: 30%!important;">
+              <tbody>
+                <tr>
+                  <td>
+                    Số từ trên phút:
+                  </td>
+                  <td>
+                    100
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Mức độ chính xác:
+                  </td>
+                  <td>
+                    100
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h2 style="text-align: center!important;">Bạn đã vượt qua!</h2>
+          </div>
+          <div class="btn-group cf">
+            <button class="btn btn-danger" id="cancel" style="align-items: center;">OK</button>
+
+          </div>
+        </dialog>
+
+      </section>
+    </div>
+  </div>
+</div>
+<script src='dialoglib.js'></script>
+  <script  src="dialog.js"></script>
+
+</body>
+</html>

@@ -21,7 +21,7 @@
     <script src="js/jquery.keyboard.extension-caret.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/arrayTrainningDataObject.js"></script>
-
+    <link rel="stylesheet" href="css/dialog.css">
 
     <!-- <link rel="apple-touch-icon" href="/game/template/images/game/logo-new.png"> -->
     <!-- <link rel="shortcut icon" href="/game/template/images/game/logo-new.png"> -->
@@ -126,13 +126,53 @@
             Bắt đầu lại
         </button>
 
+
+        <!-- <button class="btn btn-danger boxed-action" id="delete-account" onclick="handleOpen()"></button> -->
+        <dialog id="confirm-delete" class="site-dialog">
+            <header class="dialog-header">
+              <h1>Kết thúc kiểm tra</h1>
+            </header>
+            
+            <div class="dialog-content">
+              <h4 style="text-align: center;">Kết quả kiểm tra: </h4>
+              <br>
+              <table style="margin-left: auto;margin-right: auto;padding-left: 30%!important;">
+                <tbody>
+                  <tr>
+                    <td style="text-align: left;">
+                      Số từ trên phút:
+                    </td>
+                    <td class="sotu" style="padding-left: 10%;">
+                      100
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: left;">
+                      Mức độ chính xác:
+                    </td>
+                    <td class="dochinhxac" style="padding-left: 10%;">
+                      100
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <h2 style="text-align: center!important;" class="dieukien">Bạn không vượt qua bài kiểm tra! 😕</h2>
+            </div>
+            <div class="dialog-content">
+                <button class="btn btn-danger" id="cancel" style="align-items: center;">OK</button>
+            </div>
+            
+          </dialog>
+
     </div>
 
     <!-- link the JavaScript file here -->
     <script src="js/kiemtratocdo.js">
     </script>
 
-
+    <script src='dialoglib.js'></script>
+    <script  src="dialog.js"></script>
 
 
     <script src="/game/template/js/lib/jquery/jquery-3.4.1.js"></script>
