@@ -209,6 +209,7 @@ var resetValuesa = true;
 function resetValues() {
   if (!resetValuesa) {
     $("#show-header1").html("Đã hết lần thực hiện bài thi");
+    // window.location.href = "./kiemtra.html";
     return;
   }
   resetValuesa = false;
@@ -257,7 +258,10 @@ $(function() {
     $accountDeleteDialog[0].close();
     $accountDeleteDialog.removeClass('dialog-scale');
     clearTimeout(transition);
-    window.location.href = "./kiemtra.html";
+    if (!resetValuesa){
+      window.location.href = "./kiemtra.html";
+    }
+       
   });
   $('#ok').on('click', function() {
     $accountDeleteDialog[0].close();
